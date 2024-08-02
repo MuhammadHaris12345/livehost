@@ -1,0 +1,923 @@
+@font-face {
+  font-family: enchanted;
+  src: url("Assets/fonts/Enchanted Land.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.enchanted {
+  font-family: enchanted;
+}
+
+.neon {
+  color: transparent;
+  background: linear-gradient(68deg, #e48ee4, #6b6bf8, #ff748b);
+  background-clip: text;
+  filter: drop-shadow(0 0 5px #e48ee498);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background: radial-gradient(
+    #171f34 0%,
+    #111728 25%,
+    #0c111e 50%,
+    #0b101c 75%,
+    #060a11 100%
+  );
+}
+
+.navbar {
+  background: linear-gradient(180deg, #111111bb, #222222bb)!important;
+  border-bottom: 2px solid #ff00ff48!important;
+  border: 3px solid #ff00ff48;
+  border-top: none;
+  box-shadow: 0 0 10px #e854e89d;
+}
+
+.navTitle a,
+.navTitle {
+  font-size: 35px;
+  letter-spacing: 5px;
+  padding: 0;
+}
+
+.navbar-nav {
+  align-items: center;
+}
+
+
+.nav-link-hover {
+  padding-right: 20px!important;
+  padding-left: 20px!important;
+  color: #eee!important;
+}
+
+.nav-link-hover {
+  border-radius: 18px;
+}
+
+.nav-link-hover:hover {
+  background: #ffffff2c;
+  box-shadow: inset 0 0 5px 2px #000000;
+  color: #ffc107!important;
+}
+
+.nav-link-hover.active {
+  background: #ffffff2c;
+  border-radius: 18px;
+  box-shadow: inset 0 0 5px 1px #000000;
+  color: #ffc107!important;
+}
+
+/* HERO SECTION */
+#Hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#gameModal .modal-content {
+  background-image: url("Assets/Images/bg_images/modalBG.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#gameModal .modal-content {
+  background-image: url("Assets/Images/bg_images/modalBG.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#gameModal .modal-title {
+  font-size: 50px;
+  letter-spacing: 12px;
+}
+
+#gameModal .modal-body {
+  padding: 10px 30px;
+}
+
+#gameModal .modal-body img {
+  width: 100%;
+  height: 520px;
+  display: block;
+  margin: 0 auto;
+}
+
+#gameModal .modal-body .details {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 20px 30px;
+}
+
+#gameModal .modal-body .details #gamePrice {
+  font-size: 18px;
+}
+
+#gameModal .modal-body .details #gameDescription {
+  font-size: 18px;
+  text-align: justify;
+}
+
+#gameModal .modal-body .details p {
+  font-size: 20px;
+}
+
+#gameModal .modal-body .details p,
+.details li {
+  font-size: 20px;
+}
+
+#Hero.small {
+  height: 60vh;
+  position: relative;
+}
+
+#Hero.small .HeroText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+#Hero.small .HeroText h1 {
+  font-size: 80px;
+  filter: drop-shadow(5px 5px 3px #000);
+  word-spacing: 20px;
+}
+
+#Hero.small .HeroText h3 {
+  font-size: 25px;
+}
+
+#Hero.home img {
+  width: 50%;
+  height: 50%;
+}
+
+#Hero video {
+  height: 130%;
+}
+
+.AboutSection {
+  color: #fff;
+}
+
+.AboutSection .row .col h1 {
+  font-size: 56px;
+  margin: 10px 0;
+}
+
+.AboutSection .row .col p {
+  font-size: 20px;
+  margin: 20px 0;
+  text-align: justify;
+}
+
+.AboutSection .row .col marquee {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.AboutSection .row .col h6 {
+  font-size: 20px;
+  margin: 8px 0;
+}
+
+.GameSection.form {
+  height: 92vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.GameSection.form img {
+  filter: blur(1px) brightness(60%);
+}
+
+.formContainer {
+  width: 30%;
+  background: #000000a9;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 50px;
+}
+
+.formContainer h1 {
+  font-size: 50px;
+  letter-spacing: 7px;
+}
+
+.formContainer form .form-control {
+  background-color: #00000090;
+  width: 100%;
+  padding: 8px 0 8px 20px;
+  border: 1px solid grey;
+  outline: none;
+  border-radius: 5px;
+  margin: 5px 0;
+  font-size: 20px;
+  color: #ddd;
+  resize: none;
+}
+
+.formContainer form .form-control::placeholder {
+  color: #ccc;
+}
+
+.wideContainer .col .card {
+  background: none;
+  border: none;
+  border-top: 1px solid #ffffff69;
+  border-bottom: 1px solid #ffffff69;
+  backdrop-filter: blur(2px);
+  box-shadow: 0 0 5px #ffffff34, inset 0 0 20px #00000064;
+  color: #fff;
+  overflow: hidden;
+}
+
+.wideContainer .col .card img {
+  height: 300px;
+  width: 100%;
+  padding: 0 10px;
+  margin: 20px 0;
+}
+
+/* HOME HERO SECTION */
+
+/* FEATURE CONTAINER */
+.brandsContainer .col .card {
+  background-image: url("Assets/Images/bg_images/bg_1.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 20px 0;
+  transition: transform 0.3s ease;
+  border: 3px solid #f3b519;
+  box-shadow: 0 0 10px #f3b519;
+  font-size: 18px;
+}
+
+.brandsContainer .col .card:hover {
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.632);
+  transform: scale(102%);
+}
+
+.brandsContainer .col img {
+  height: 150px;
+  width: 100%;
+  padding: 10px 20px;
+  margin: auto;
+}
+
+/* SECTION HEADERS */
+
+.SectionBanners {
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  box-shadow: inset 0 0 30px #00000070;
+}
+
+.SectionBanners.gold {
+  width: 98%;
+  margin-left: 1%;
+  background-position: -300px;
+  border-radius: 6px;
+  box-shadow: 0 0 20px 3px #dab9006c, inset 0 0 30px #0000009c;
+}
+
+.SectionBanners h1 {
+  word-spacing: 20px;
+  letter-spacing: 5px;
+  font-size: 60px;
+}
+
+.gameHeader {
+  align-items: start;
+}
+
+.gameHeader p {
+  font-size: 100px;
+  word-spacing: 35px;
+  letter-spacing: 12px;
+  align-items: start;
+  padding: 0 30px;
+  color: transparent;
+  background: linear-gradient(68deg, #c543c5, #3838b0, #f95674);
+  background-clip: text;
+  filter: drop-shadow(6px 6px 3px #000000);
+}
+
+.GameSection {
+  position: relative;
+  overflow: hidden;
+}
+
+.GameSection > img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -9999;
+  filter: blur(6px) brightness(60%);
+}
+
+.GameHeadText {
+  color: #fff;
+  letter-spacing: 4px;
+  word-spacing: 20px;
+  font-size: 40px;
+}
+
+.GameMarquee {
+  background: #00000031;
+  color: #fff;
+  letter-spacing: 6px;
+  word-spacing: 20px;
+  font-size: 16px;
+}
+
+/* GAME CONTAINER */
+.GameContainer .col .card {
+  padding: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 3px solid #00fbff6d;
+  background: #111728bc;
+  backdrop-filter: blur(5px);
+  transition: transform 0.045s ease, border 0.3s ease;
+}
+
+.GameContainer .col .card:hover {
+  transform: scale(102%);
+  border: 3px solid #ff00ff67;
+  box-shadow: 0 0 10px #ff00ff48 !important;
+}
+
+.GameContainer .col .card img {
+  width: 100%;
+  height: 350px;
+  border-radius: 8px;
+}
+
+/* Accessiories Section */
+.AccContainer .col .card {
+  background: #39b8bd60;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.AccContainer .col .card .card-body {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(0%, -50%);
+}
+
+.AccContainer .col .card .card-body button {
+  border: 1px solid white;
+  background-color: transparent;
+  color: #fff;
+  transition: background-color 0.2s ease;
+}
+
+.AccContainer .col .card:hover .card-body button {
+  border: 1px solid #168279;
+  background-color: #168279;
+  color: #fff;
+}
+
+.AccContainer .col .card img {
+  box-shadow: inset 0 0 120px #ffffffcc;
+  padding: 10px 0;
+  height: 420px;
+}
+
+.AccSmall .col .card img {
+  box-shadow: inset 0 0 60px #ffffffcc;
+  padding: 5px 0;
+  height: 300px;
+}
+
+#Hero.compare img {
+  height: 350%;
+  margin-top: -650px;
+  filter: brightness(60%) grayscale(10%);
+}
+
+.CompareContainer .product-info {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.CompareContainer .product-info img {
+  width: 80%;
+  height: 500px;
+  display: block;
+  margin: 10px auto;
+  border-radius: 8px;
+  box-shadow: 0 0 8px 5px #ffffff20;
+}
+
+.CompareContainer .product-info {
+  background-color: #00000032;
+}
+
+.CompareContainer .product-info h3 {
+  font-size: 40px;
+}
+
+.CompareContainer .product-info h4 {
+  color: #d9d9d9;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: yellow;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.CompareContainer .product-info p,
+.requirement ul li {
+  font-size: 18px;
+}
+
+#descA,
+#descB {
+  max-height: 100px;
+  overflow: scroll;
+}
+
+/* Footer */
+
+footer {
+  background: linear-gradient(0deg, #111, #222);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border: 3px solid #ff00ff48;
+  box-shadow: 0 0 10px #e854e89d;
+  border-bottom: none;
+}
+
+footer,
+footer ul li a,
+footer ul li svg {
+  color: #fff !important;
+}
+
+/* Media Queries */
+/* Desktop/Laptop */
+@media (max-width: 1024px) {
+  #gameModal .modal-title {
+    font-size: 40px;
+    letter-spacing: 8px;
+  }
+
+  #gameModal .modal-body img {
+    height: 450px;
+  }
+
+  #gameModal .modal-body {
+    padding: 10px 20px;
+  }
+
+  #gameModal .modal-body .details {
+    padding: 10px;
+  }
+
+  #gameModal .modal-body .details #gamePrice {
+    font-size: 16px;
+  }
+
+  #gameModal .modal-body .details #gameDescription {
+    font-size: 16px;
+  }
+
+  #gameModal .modal-body .details p,
+  .details li {
+    font-size: 17px;
+  }
+
+  .brandsContainer .col .card {
+    padding: 10px 0;
+    font-size: 16px;
+  }
+
+  .SectionBanners h1 {
+    font-size: 40px;
+  }
+
+  .AccContainer .col .card img {
+    height: 350px;
+  }
+
+  .AccSmall .col .card img {
+    height: 250px;
+  }
+
+  .gameHeader p {
+    font-size: 80px;
+    word-spacing: 25px;
+    letter-spacing: 8px;
+    padding: 0 10px;
+  }
+
+  .wideContainer .col .card img {
+    height: 250px;
+    width: 100%;
+    margin: 18px 0;
+  }
+
+  .AboutSection .row .col h1 {
+    font-size: 27px;
+    margin: 10px 0;
+  }
+
+  .AboutSection .row .col p {
+    font-size: 16px;
+    margin: 10px 0;
+    text-align: justify;
+  }
+
+  .AboutSection .row .col marquee {
+    font-size: 12px;
+    margin: 8px 0;
+  }
+
+  .AboutSection .row .col h6 {
+    font-size: 18px;
+    margin: 2px 0;
+  }
+
+  .GameSection.form img {
+    width: 100%;
+  }
+
+  .formContainer {
+    width: 40%;
+    padding: 15px 40px;
+  }
+
+  .formContainer h1 {
+    font-size: 40px;
+    letter-spacing: 7px;
+  }
+
+  .formContainer form .form-control {
+    padding: 5px 0 5px 10px;
+    font-size: 18px;
+  }
+
+  .CompareContainer .product-info {
+    padding: 8px 10px;
+  }
+
+  .CompareContainer .product-info img {
+    width: 90%;
+    height: 450px;
+  }
+
+  .CompareContainer .product-info h3 {
+    font-size: 38px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  #gameModal .modal-title {
+    font-size: 25px;
+    letter-spacing: 3px;
+  }
+
+  #gameModal .modal-body img {
+    width: 70%;
+    height: 350px;
+    margin-bottom: 20px;
+  }
+
+  .navbar-nav {
+    align-items: start;
+    margin: 0 auto;
+    width: 90%;
+    gap: 20px;
+  }
+
+  #Hero {
+    height: 90vh;
+  }
+
+  .brandsContainer .col .card {
+    margin: 0 30px;
+    padding: 10px 0;
+    font-size: 11px;
+  }
+
+  .brandsContainer .col img {
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+  }
+
+  .GameContainer .col .card img {
+    height: 500px;
+  }
+
+  .SectionBanners h3 {
+    font-size: 28px;
+  }
+
+  .SectionBanners.gold {
+    width: 100%;
+    margin-left: 0%;
+    border-radius: 3px;
+    background-position: -500px;
+    box-shadow: 0 0 20px 3px #dab9003a, inset 0 0 30px #0000007a;
+  }
+
+  .SectionBanners h1 {
+    font-size: 35px;
+  }
+
+  .gameHeader p {
+    font-size: 60px;
+    word-spacing: 15px;
+    letter-spacing: 10px;
+    padding: 0 10px;
+  }
+
+  #Hero.small .HeroText h1 {
+    font-size: 60px;
+    word-spacing: 10px;
+  }
+
+  #Hero.small .HeroText h3 {
+    font-size: 20px;
+  }
+
+  .wideContainer .col .card img {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 50px 0;
+  }
+
+  .AboutSection .row .col h6 {
+    font-size: 20px;
+    margin: 8px 0;
+  }
+
+  .GameSection.form img {
+    width: 120%;
+  }
+
+  .formContainer {
+    width: 50%;
+    padding: 15px 30px;
+  }
+
+  .formContainer h1 {
+    font-size: 40px;
+    letter-spacing: 7px;
+  }
+
+  .formContainer form .form-control {
+    padding: 5px 0 5px 10px;
+    font-size: 16px;
+  }
+
+  #Hero.compare img {
+    height: 200%;
+    margin-top: -320px;
+  }
+
+  .CompareContainer .product-info {
+    padding: 8px 2px;
+    margin: 5px 0;
+  }
+
+  .CompareContainer .product-info img {
+    width: 90%;
+    height: 380px;
+  }
+
+  .CompareContainer .product-info h3 {
+    font-size: 18px;
+  }
+
+  .CompareContainer .product-info h4 {
+    font-size: 18px;
+    margin-bottom: 2px;
+  }
+
+  .CompareContainer .product-info p,
+  .requirement ul li {
+    font-size: 16px;
+  }
+}
+
+/* Mobile-L */
+@media (max-width: 430px) {
+  #Hero {
+    height: 42vh;
+  }
+
+  .brandsContainer .col .card {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 11px;
+  }
+
+  .brandsContainer .col img {
+    height: 80px;
+    width: 80px;
+  }
+
+  .GameHeadText {
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    font-size: 30px;
+  }
+
+  .GameContainer .col .card {
+    padding: 2px;
+  }
+
+  .GameContainer .col .card img {
+    height: 400px;
+  }
+
+  .SectionBanners {
+    height: 30vh;
+  }
+
+  .SectionBanners h3 {
+    font-size: 16px;
+  }
+
+  .SectionBanners.gold {
+    width: 100%;
+    margin-left: 0%;
+    border-radius: 0px;
+    background-position: -900px;
+    box-shadow: 0 0 20px 3px #dab90067, inset 0 0 30px #00000041;
+  }
+
+  .SectionBanners h1 {
+    font-size: 25px;
+    letter-spacing: 0px;
+    word-break: 0px;
+  }
+
+  .gameHeader p {
+    font-size: 30px;
+    word-spacing: 0px;
+    letter-spacing: 1px;
+    padding: 0 10px;
+  }
+
+  #Hero.small .HeroText h1 {
+    font-size: 45px;
+    word-spacing: 6px;
+  }
+
+  #Hero.small .HeroText h3 {
+    font-size: 18px;
+  }
+
+  .wideContainer .col .card img {
+    height: 320px;
+    width: 100%;
+    margin: 0;
+    padding: 20px 0;
+  }
+
+  .AboutSection .row .col h6 {
+    font-size: 12px;
+    margin: 8px 0;
+  }
+
+  .GameSection.form img {
+    width: 200%;
+  }
+
+  .formContainer {
+    width: 80%;
+    padding: 15px 30px;
+  }
+
+  .CompareContainer .product-info {
+    padding: 8px 10px;
+  }
+
+  .CompareContainer .product-info img {
+    width: 90%;
+    height: 380px;
+  }
+
+  .CompareContainer .product-info h3 {
+    font-size: 18px;
+  }
+
+  .CompareContainer .product-info h4 {
+    font-size: 18px;
+    margin-bottom: 2px;
+  }
+
+  .CompareContainer .product-info p,
+  .requirement ul li {
+    font-size: 16px;
+  }
+}
+
+/* Mobile-M */
+@media (max-width: 375px) {
+  #gameModal .modal-body img {
+    width: 100%;
+  }
+
+  .brandsContainer .col .card .card-body {
+    display: none;
+  }
+
+  .brandsContainer .col img {
+    height: 80px;
+    width: 80px;
+  }
+
+  .GameContainer .col .card img {
+    height: 300px;
+  }
+
+  .SectionBanners h3 {
+    font-size: 13px;
+  }
+
+  .SectionBanners h1 {
+    font-size: 20px;
+  }
+
+  #Hero.small .HeroText h1 {
+    font-size: 35px;
+    word-spacing: 6px;
+  }
+
+  #Hero.small .HeroText h3 {
+    font-size: 16px;
+  }
+
+  .wideContainer .col .card img {
+    height: 250px;
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+  }
+
+  .GameSection.form img {
+    width: 220%;
+  }
+
+  .formContainer {
+    width: 90%;
+    padding: 15px 30px;
+  }
+}
+
+/* Mobile-S */
+@media (max-width: 320px) {
+  #Hero.small .HeroText h1 {
+    font-size: 28px;
+    word-spacing: 6px;
+  }
+
+  #Hero.small .HeroText h3 {
+    font-size: 12px;
+  }
+}
